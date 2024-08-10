@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - Font Awesome
+  -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <!-- Nombre -->
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jesus Ramirez</h1>
+
+          <!-- Dedicacion -->
+
+          <p class="title">Desarrollador web</p>
+          <p class="title">Desarrollador software</p>
+        </div>
+
+        <!-- Slider que sale en mobile -->
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Ver mas informacion</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <!-- Apartado de informacion -->
+
+            <div class="contact-info">
+              <p class="contact-title">Correo</p>
+
+              <a href="mailto:jdramirezc222@gmail.com" class="contact-link">jdramirezc222@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fa-solid fa-mobile-screen-button"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Telefono</p>
+
+              <p href="tel:+34624939252" class="contact-link">(+34) 624-93-62-52</p>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Ubicación</p>
+
+              <address>Montecarmelo, Madrid. 28049, Madrid, España</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <!-- Separador -->
+
+        <div class="separator"></div>
+
+        <!-- Redes sociales -->
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.instagram.com/yisus_drag?igsh=MTdybnA4M2Fqa2lqOA==" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/Dragonzgold" class="social-link">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      Contenido principal
+    -->
+
+    <div class="main-content">
+
+      <!--
+        Navbar
+      -->
+
+      <nav class="navbar">
+
+        <!-- opciones del navbar -->
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resumen</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portafolio</button>
+          </li>
+        </ul>
+
+      </nav>
+
+      <!--
+      About
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">Sobre Mí</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Desarrollador Full-Stack con pasión por crear soluciones web innovadoras. Con 6 meses de experiencia, he
+            participado en proyectos para pequeñas y medianas empresas, donde he aplicado mis habilidades en React,
+            NestJS y otros frameworks para desarrollar interfaces de usuario intuitivas y backend escalables. Soy un
+            autodidacta constante, con un nivel de inglés intermedio y una fuerte capacidad para trabajar en equipo
+          </p>
+        </section>
+
+        <!--
+          Servicios
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Mis funciones</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/online-education_1466851.png" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Diseñador Web</h4>
+
+                <p class="service-item-text">
+                  Diseños modernos y sencillos. Para dar la mejor calidad en cada pagina web
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/web-development_1688400.png" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador Web</h4>
+
+                <p class="service-item-text">
+                  desarrollador web de alta calidad y profesional. Con la mejor tecnologia
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/database-icon-4.jpg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador de Base de Datos</h4>
+
+                <p class="service-item-text">
+                  Desarrollador de CRUD y diseños de los mismos en una estructura de base de datos
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/api_3231329.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Desarrollador API</h4>
+
+                <p class="service-item-text">
+                  Desarrollador de API para servicios y desarrollos
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          Programas y lenguajes
+        -->
+
+        <section class="app">
+
+          <h3 class="h3 app-title">Programas y lenguajes</h3>
+
+          <ul class="app-list has-scrollbar">
+
+            <!-- JavaScript -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngegg.png" alt="JavaScript" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>JavaScript</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    He desarrollado diferentes programas y sitios web con este lenguaje. Poseo multiples conocimientos
+                    en el area
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- TypeScript -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngwing.com.png" alt="TypeScript" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>TypeScript</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Desarrollo de backend con este lenguaje. El cual e usado para varios proyectos
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- React -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngfind.com-react-logo-png-6854970.png" alt="React" width="60"
+                    data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>React</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Freamwork principal con el que desarrollo todos mis programas enfocado en el front-end
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- NestJS -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/Daco_4989583.png" alt="NestJS" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>NestJS</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Freamwork en el que desarrollo todos mis back-end, para darles una mayor robustez y escalabilidad
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <!-- Java -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngwing.com (1).png" alt="Java" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>Java</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Lenguaje en el que desarrollado diversos programas para la universidad. Pero, con conocimiento
+                    optimo en este lenguaje
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- HTML5 -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/klipartz.com.png" alt="HTML5" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>HTML5</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Lenguaje de hipertexto con el que e desarrollado diversas paginas con gran estilo y presencia optima
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- CSS -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/css-svgrepo-com.svg" alt="CSS" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>CSS</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Lenguaje de Hoja de estilo, con el cual le se le da vida a los sitios web creados con el lenguaje de
+                    hipertexto HTML5
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- PostgreSQL -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngwing.com (2).png" alt="PostgreSQL" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>PostgreSQL</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Gestor de Base de datos con el cual conecto con mi backend para hacer los sitios web y/o mis
+                    proyectos
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- MySQL -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngwing.com (3).png" alt="MySQL" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>MySQL</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Gestor de base de datos con el cual empece y cree mis primeros proyectos, ademas de usarlo
+                    paulativamente en diversos proyectos variados
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <!-- Docker -->
+
+            <li class="app-item">
+              <div class="content-card" data-app-item>
+
+                <figure class="figure-app-box">
+                  <img src="./assets/images/pngwing.com (4).png" alt="Docker" width="60" data-app-avatar>
+                </figure>
+
+                <h4 class="h4 app-item-title" data-app-title>Docker</h4>
+
+                <div class="app-text" data-app-text>
+                  <p>
+                    Sistema de empaquetado para la cual pruebo las conexiones de mis base de datos con mi backend. Para
+                    una optima conexion y seguridad en la misma
+                  </p>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - app modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="app-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title></h4>
+
+              <div data-modal-text>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+      </article>
+
+
+      <!--
+        Resumen
+      -->
+
+      <article class="resumen" data-page="resumen">
+
+        <!-- Resumen de mi educacion y experiencia -->
+
+        <header>
+          <h2 class="h2 article-title">Resumen</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Educacion</h3>
+          </div>
+
+          <!-- Inicio de las divisiones de experiencia y educacion -->
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <!-- Colegio Secundaria -->
+
+              <h4 class="h4 timeline-item-title">Colegio ItaloVenezolano Antonio Rosmini</h4>
+
+              <span>2014 — 2019</span>
+
+              <p class="timeline-text">
+                Secundaria ItaloVenezolana ubicada en Venezula. Donde me gradue en el apartado de Ciencias
+              </p>
+
+            </li>
+
+            <!-- Universidad pregrado -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universidad Rafael Belloso Chacín (URBE)</h4>
+
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                Universidad Venezolana donde me gradue como Ingeniero Informatico. 4 años de preparacion en cada uno de
+                los aspectos y areas en el mundo de la tecnologia
+              </p>
+
+            </li>
+
+            <!-- Curso de programacion Web -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Curso de programación Web</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Curso empleado en Venezuela en una sucursal conocida. Donde me instruyeron de los mejores y mas
+                actualizados freamwork para la realizacion completa de paginas web
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <!-- Separador de la educacion con experiencia  -->
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experiencia</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <!-- Experiencia en la game Jam -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Game Jam</h4>
+
+              <span>2022 - 2022</span>
+
+              <p class="timeline-text">
+                Evento informatico en la cual se desarrollo un videojuego en menos de 48 horas usando el motor de GODOT.
+                Patrocinado por varias empresas de tecnologias del Zulia Venezuela
+              </p>
+
+            </li>
+
+            <!-- Diseñador y desarrollador de pagina web -->
+
+            <li class="timeline-item">
+
+
+              <h4 class="h4 timeline-item-title">diseñador y desarrollador de paginas web</h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                Creación de varias paginas web para diferentes tipo de empresas, comisiones o personas que necesitaban
+                una para diversos proyectos personales o empresariales
+              </p>
+
+            </li>
+
+            <!-- Desarrollador de backend -->
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Desarrollador de backend </h4>
+
+              <span>2024 — Presente</span>
+
+              <p class="timeline-text">
+                Desarrollo de backend en un startup Mercury C.A. para manejo y control de data, utilizando Nest, MySQL
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portafolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://tumascotaideal.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/TuMascotaIdeal.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tu mascota Ideal</h3>
+
+                <p class="project-category">Web especializada para la adopcion de mascotas</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="https://dragonball80s.netlify.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Dragon ball.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Dragon ball</h3>
+
+                <p class="project-category">Web desarrollada por la nostalgia y un recuerdo al pasado</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/Dragonzgold/WorkE">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/mercury.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Transferencia de archivos (backend)</h3>
+
+                <p class="project-category">Traslado de data de una Base de datos a otra Base de datos. Con nestJS</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+    - custom js link
+  -->
+      <script src="./assets/js/script.js"></script>
+
+      <!--
+    - ionicon link
+  -->
+      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
